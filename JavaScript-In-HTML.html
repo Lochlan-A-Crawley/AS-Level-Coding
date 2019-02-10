@@ -1,0 +1,47 @@
+<!-- Created by LC, 9/2/19 w/ help from www.w3schools.com  -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>JavaScript Examples</title>
+
+</head>
+
+<body>
+
+    <!--Changing HTML content-->
+    <h2 id="demo1">You're an amazing person and unique in every way</h2>
+
+    <button type="button"
+    onclick="document.getElementById('demo1').innerHTML = 'Just kidding'">Click here</button>
+
+    <!-- Changing HTML attributes -->
+    <h3>Happy or sad?<h3>
+    <button onclick="document.getElementById('myImage').src='https://cdn.shopify.com/s/files/1/1061/1924/products/Slightly_Smiling_Face_Emoji_87fdae9b-b2af-4619-a37f-e484c5e2e7a4_grande.png?v=1480481059'">Happy</button>
+    <img id="myImage" src="https://cdn.shopify.com/s/files/1/1061/1924/products/Sad_Face_Emoji_large.png?v=1480481055" style="width:100px">
+    <button onclick="document.getElementById('myImage').src='https://cdn.shopify.com/s/files/1/1061/1924/products/Sad_Face_Emoji_large.png?v=1480481055'">Sad</button>
+
+    <!-- Hiding HTML elements -->
+    <h3>I wonder where he went?</h3>
+    <img id="ninja" src="https://static.thenounproject.com/png/416207-200.png" style="width:200px">
+    <button type="button" onclick="document.getElementById('ninja').style.display='none'">Click here</button>
+
+    <!-- Showing HTML elements-->
+    <br><br>
+    <img id="ninjaAgain"style="display:none"src="https://static.thenounproject.com/png/416207-200.png"style="width:200px">
+    <button type="button" onclick="document.getElementById('ninjaAgain').style.display='block'">Click here</button>
+
+    <!-- Shows an alert on screen -->
+    <script>
+        window.alert("This is JavaScript")
+    </script>
+
+</body>
+</html>
